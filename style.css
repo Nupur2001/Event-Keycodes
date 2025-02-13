@@ -11,20 +11,17 @@ body {
 
 .container {
   margin: 300px auto;
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.pressAnyKeyContainer{
-    display: none;
 }
 
 .pressAnyKeyContainer,
 .eventKey,
 .eventKeyCode,
 .eventCode {
-  height: 70px;
-    width: 500px;
+
   font-size: 1.4rem;
   font-weight: bold;
   display: flex;
@@ -54,6 +51,10 @@ body {
 }
 
 .allEventCodes.active {
-  display: block;
+  display: flex;
+  margin-top: 1rem;
+}
+.pressAnyKeyContainer .active{
+    display: none;
 }
 
